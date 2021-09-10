@@ -4,7 +4,11 @@ const styles = () => ({
     height:"100%"
   },
   reset: {
-    marginLeft: "20px"
+    marginLeft: "20px",
+    background: "#d7322a",
+    "&:hover" : {
+      background : "#dd3e37"
+    }
   },
   headerColor: {
     color: "white"

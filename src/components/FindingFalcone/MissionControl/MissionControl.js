@@ -136,11 +136,11 @@ const MissionControl = ({
     <Paper className={root}>
       {planets.length && vehicles.length && (
         <Grid container justify="center">
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <h2 className={headerColor} align="center">
               Select planets you wish to search in:
             </h2>
-          </Grid>
+          </Grid> */}
           {destinationsList.map((destination, index) => (
             <Grid
               key={index}

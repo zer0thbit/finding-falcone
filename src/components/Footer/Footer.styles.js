@@ -7,7 +7,9 @@ const styles = () => ({
     color: "white"
   },
   linkUrl: {
-    fontWeight: 400
+    fontWeight: 400,
+    textDecoration: 'none',
+    color: 'white'
   }
 });
 

@@ -7,7 +7,7 @@ import { Grid, Paper, withStyles } from "@material-ui/core";
 import styles from "./MissionReport.styles";
 
 const MissionReport = ({
-  classes: { root, headerColor },
+  classes: { root, headerColor,mainContainer, start },
   totalSearchTime,
   planetFound,
   searchStatus,
@@ -19,7 +19,7 @@ const MissionReport = ({
       {token !== "" ? (
         <Paper className={root}>
           {searchStatus === "success" ? (
-            <Grid container justify="center">
+            <Grid className={mainContainer} container justify="center">
               <Grid item xs={12}>
                 <h2 className={headerColor} align="center">
                   Success! Congratulations on Finding Falcone. King Shan is
@@ -38,7 +38,7 @@ const MissionReport = ({
               </Grid>
             </Grid>
           ) : (
-            <Grid container justify="center">
+            <Grid className={mainContainer} container justify="center">
               <Grid item xs={12}>
                 <h2 className={headerColor} align="center">
                   Failure! Unable to locate Falcone!
@@ -48,8 +48,8 @@ const MissionReport = ({
           )}
           <Grid container justify="center">
             <Grid item xs={12}>
-              <h2 className={headerColor} align="center">
-                <Link to="/">Start Again</Link>
+              <h2 align="center">
+                <button className={start}><a className={headerColor} href="/">Start Again</a></button>
               </h2>
             </Grid>
           </Grid>

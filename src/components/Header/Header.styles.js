@@ -18,11 +18,9 @@ const styles = () => ({
     textAlign: "center"
   },
   link: {
-    color: "blue",
+    color: "white",
     textDecoration: "none",
-    "&:hover": {
-      textDecoration: "underline"
-    }
+    marginRight: '10px'
   }
 });
 

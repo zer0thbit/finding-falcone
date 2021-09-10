@@ -22,16 +22,13 @@ class Header extends Component {
       <AppBar position="static" className={appBar}>
         <Toolbar className={toolbar}>
           <div>&nbsp;</div>
-          <Typography variant="h4" className={[title, textCenter].join(" ")}>
-            Finding Falcone!
+          <Typography variant="h6" className={[title, textCenter].join(" ")}>
+          Select planets you wish to search in:
           </Typography>
-          <div>
-            <Button variant="text">
-              <a href={GEEK_TRUST_HOME_URL} className={link}>
-                Geek Trust Home
-              </a>
-            </Button>
-          </div>
+          <Typography variant="text" className={link}>
+            Finding Falcone Challenge
+          </Typography>
+
         </Toolbar>
       </AppBar>
     );
